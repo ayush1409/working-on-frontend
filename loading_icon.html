@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loading Icon</title>
+	<style type="text/css">
+	
+		html {
+		  background: #ecf0f1;
+		}
+
+		body, h1, h2 {
+		  font-family: Helvetica, Sans-serif; 
+		  color: #2c3e50;
+		  margin:0; 
+		  padding:0; 
+		  font-weight:300;
+		}
+
+		h1 {
+		  font-size: 80px;
+		}
+
+		h2 {
+		  font-size: 36px;
+		  opacity: 0;
+		  animation: appear 1s 3s forwards;
+		}
+
+		.container{
+		  margin:4em;
+		  text-align: center;
+		}
+
+		.loader{
+		  margin : auto ;
+		  border: 16px solid #bdc3c7 ;
+		  width : 120px ;
+		  height : 120px ;
+		  border-top-color: red ;
+		  border-bottom-color: green ;
+		  border-radius : 50% ;
+		  animation : spin 2s linear infinite;
+		}
+
+		@keyframes spin{
+		  0%{
+		    transform: rotate(0deg) scale(1) ;
+		  }
+		  50%{
+		    transform: rotate(360deg) scale(1.1) ;
+		    border-top-color: blue ;
+		    border-bottom-color: blue ;
+		  }
+		  100%{
+		    transform: rotate(720deg) scale(1) ;
+		  }
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+	    <h1>This page takes forever to load.</h1>
+	  	<div class="loader"></div>
+	</div>
+</body>
+</html>
